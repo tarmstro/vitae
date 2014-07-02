@@ -1,0 +1,416 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+%------------------------------------
+
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt]{article}
+\usepackage[top=2cm,right=2.5cm,left=2.5cm,nohead,nofoot]{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\usepackage{fontspec} 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\usepackage{txfonts}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+%\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Adobe Caslon Pro}
+\setmonofont[Scale=1.0]{Optima} 
+\setsansfont[Scale=1.0]{Optima Regular} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+%\sectionfont{\rmfamily\mdseries\Large} 
+%\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+%\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[bookmarks, colorlinks, breaklinks, pdftitle={Tom Armstrong - Curriculum Vitae},pdfauthor={Tom Armstrong}]{hyperref}  
+\hypersetup{linkcolor=black,citecolor=black,filecolor=black,urlcolor=black} 
+\setcounter{page}{1}
+
+% Fancy Headers
+\pagestyle{fancy}
+\setlength{\headheight}{5pt}
+\setlength{\footskip}{30pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\cfoot{\emph{Tom Armstrong~~$\sqbullet$~~Curriculum Vitae~~$\sqbullet$~~Page~\thepage~of~\pageref{LastPage}}}
+ \def\sqbullet{\vrule height 0.9ex width .7ex depth -.2ex }
+
+% DOCUMENT
+\begin{document}
+\reversemarginpar
+{\LARGE Tom Armstrong}\\[1cm]
+%{\LARGE Tom Armstrong}\\[1cm]
+%\href{http://www.wheatoncollege.edu/Catalog/MATHCS/}{Department of Mathematics \amper{} Computer Science}\\
+Wheaton College\\
+Department of Mathematics and Computer Science\\
+26 East Main Street\\
+Norton, MA \texttt{02766}\\[.2cm]
+%Phone: \texttt{508.286.5686}\\
+%Fax: \texttt{508.285.8278}\\[.2cm]
+email: \href{mailto:tarmstro@wheatoncollege.edu}{tarmstro@wheatoncollege.edu}\\
+\textsc{url}: \href{http://www.tarmstro.com/}{http://www.tarmstro.com/}\\ 
+\vfill
+
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2008}\textsc{PhD} in Computer Science, {\em University of Maryland Graduate School, Baltimore}\\[0.1cm]
+%{\em Dissertation}: ``From Sensors to Structures: Unsupervised Language Learning''\\[0.3cm]
+\years{2002}\textsc{BSc} in Computer Science, {\em University of Massachusetts Amherst}\\
+\textsc{BSc} in Linguistics; Mathematics, {\em University of Massachusetts Amherst}
+
+%%\hrule
+\section*{Current Appointments}
+\noindent
+\years{2014-}Associate Professor of Computer Science, \href{http://www.wheatoncollege.edu/}{\emph{Wheaton College, Norton, MA}}
+
+%%\hrule
+\section*{Previous Appointments}
+\noindent
+\years{2008-2014}Assistant Professor of Computer Science, \href{http://www.wheatoncollege.edu/}{\emph{Wheaton College, Norton, MA}}\\[0.1cm]
+\years{2011}Fulbright-Nehru Visiting Lecturer, {\em Hemchandracharya North Gujarat University, India}\\[0.1cm]
+\years{2011}Research Associate, {\em \href{http://www.coral-lab.org/}{CoRaL Lab}, University of Maryland, Baltimore County}\\[0.1cm]
+\years{2004}Engineering Intern, {\em Google Inc.}, Mountain View, California\\[0.1cm]
+\years{2004, 2008}Instructor, {\em University of Maryland, Baltimore County}\\[0.1cm]
+\years{2002-2008}Research Assistant, {\em \href{http://www.coral-lab.org/}{CoRaL Lab}, University of Maryland, Baltimore County}\\[0.1cm]
+\years{2001-2002}Research Assistant, {\em Experimental Knowledge Systems Lab, UMass Amherst}\\[0.1cm]
+\years{2000-2001}Laboratory Assistant, {\em \href{http://www.umass.edu/language_acquisition/}{Language Acquisition Lab}, Department of Linguistics, UMass Amherst}\\[0.1cm]
+Web Application Developer, {\em \href{http://www.cesd.umass.edu/}{Center for Computer-Based Instructional Technology}, UMass Amherst}
+
+\newpage
+%\hrule
+\section*{Grants \amper{} Fellowships}
+
+\subsection*{External}
+\noindent
+\years{2011}{\bf Fulbright-Nehru Scholar}, {\em The J.~William Fulbright Foreign Scholarship Board}\\[0.3cm]
+{\bf Collaborative Research Experience for Undergraduates (CREU)}, with T.~Oates and P.~Hu, {\em Computing Research Association}. \$31,000\\[0.3cm] 
+{\bf US-Egypt Science \& Technology Junior Scientist Award}, {\em US-Egypt S\&T Fund}. \$20,000\\[0.3cm]
+\years{2010}{\bf Marion and Jasper Whiting Fellowship}, {\em Marion and Jasper Whiting Foundation}. \$5,700\\[0.3cm]
+{\bf Amazon Web Services Teaching Grant}, {\em Amazon.com, Inc.} \$1,300\\[0.3cm]
+{\bf Sponsored Travel to the Association for Computing Machinery Awards Banquet}, \\{\em Association for Computing Machinery}\\[0.3cm]
+\years{2009}{\bf Elastic Compute Cloud (EC2) Credits}, {\em Amazon.com, Inc.} \$800\\[0.3cm]
+\years{2005}{\bf Sponsored Travel to the 20$^{th}$ National Conference on Artificial Intelligence}, \\
+{\em American Association for Artificial Intelligence}\\[0.3cm]
+\years{2004}{\bf Sponsored Travel to the 7$^{th}$ International Colloquium on Grammatical Inference}, \\
+{\em Knowledge Discovery Network of Excellence}\\[0.3cm]
+\years{2001-2002}{\bf ``Maps for Verbs: Learning Verb Meanings through Dynamics.''} {\em Microsoft Corp}.  \$5,000
+
+\vspace{-0.2cm}
+
+\subsection*{Internal}
+\noindent
+\years{2013--2014}{\bf LIS / LTLC Academic Technology Funds}, {\em WHALE MakerSpace}. \$4,000\\[0.1cm]
+\years{2012--2013}{\bf Mellon Curriculum Research Award}. \$3,000\\[0.1cm]
+{\bf LIS / LTLC Academic Technology Funds}, {\em WHALE: Fiberspace}. \$4,000\\[0.1cm]
+{\bf Connections v2.0}, {\em Wheaton College Makerspace} (PI; Co-PI: Mark LeBlanc). \$10,000\\[0.1cm]
+{\bf Course Transformation Award}. \$1,000\\[0.1cm]
+{\bf LIS / LTLC Academic Technology Funds}, {\em WHALE: iLab}. \$4,000\\[0.1cm]
+\years{2011--2012}{\bf Mellon Summer Faculty Research Award}. \$3,000\\[0.1cm]
+{\bf LIS / LTLC Academic Technology Funds}, {\em WHALE: iLab}. \$2,000\\[0.1cm]
+\years{2008/2011}{\bf Wheaton Research Partnership}. \$1600\\[0.1cm]
+\years{2011}{\bf Provost Faculty Summer Research Award}. \$3,000\\[0.1cm]
+{\bf Wheaton Robotics Laboratory Funding}. \$4,000\\[0.1cm]
+\years{2010}{\bf Sponsored Group Travel to the Mass.~Museum of Contemporary Art}, {\em Arts in the City.} \$700\\[0.1cm]
+\years{2009}{\bf Time Series Data Mining}, {\em Mars Student/Faculty Research Fellowship.}  \$5,000\\[0.1cm]
+\years{2009--2010}{\bf Wheaton Robotics Laboratory Funding}. \$15,000
+
+\newpage
+\section*{Honors \amper{} Awards}
+\noindent
+\years{2010}{\bf Invitation to the Association for Computing Machinery Awards Banquet}, {\em ACM}\\[0.1cm]
+{\bf Invitation to the Posse Career Program Internship Celebration}, {\em Posse Foundation}\\[0.1cm]
+\years{2005}{\bf Graduate Student Leader of the Year}, {\em University of Maryland, Baltimore County}\\[0.1cm]
+\years{2002}{\bf Senior Leadership Award}, {\em University of Massachusetts Amherst}\\[0.1cm]
+{\bf Gerald F. Scanlon Student Employee of the Year}, {\em University of Massachusetts Amherst}
+
+
+\section*{Publications \amper{} Talks}
+
+\subsection*{Refereed Conferences}
+\noindent
+\years{2011}{\bf Unsupervised Discovery of Phoneme Boundaries in Multi-Speaker Continuous Speech}, with S.~Antetomaso.  {\em Proceedings of the Joint IEEE International Conference on Development and Learning and on Epigenetic Robotics}\\[0.3cm]
+{\bf Classification of Patients Using Novel Multivariate Time Series Representations of Physiological Data}, with P.~Ord\'{o}\~{n}ez, T.~Oates, and J.~Fackler.  {\em Proceedings of the 10th International Conference on Machine Learning and Applications}\\[0.3cm]
+{\bf Unsupervised Discovery of Motifs Under Amplitude Scaling and Shifting in Time Series Databases}, with E.~Drewniak.  {\em Proceedings of the 7th International Conference on Machine Learning and Data Mining in Pattern Recognition}\\[0.3cm]
+\years{2010}{\bf Robotics and Intelligent Systems for Social and Behavioral Science Undergraduates}.  {\em Proceedings of the 15th Annual Conference on Innovation and Technology in Computer Science Education}\\[0.3cm]
+{\bf Connecting Across Campus}, with M. LeBlanc and M. Gousie.  {\em Proceedings of the 41$^{st}$ ACM Technical Symposium on Computer Science Education}\\[0.3cm]
+\years{2008}{\bf Learning in the Lexical-Grammatical Interface}, with T. Oates.  {\em Proceedings 
+of the 21$^{st}$ International Florida Artificial Intelligence Research Society Conference}\\[0.3cm]
+\href{http://dx.doi.org/10.1007/978-3-540-88009-7_23}{{\bf Which Came First, the Grammar or the Lexicon?}}, with T. Oates. {\em Proceedings of the 9$^{th}$ International Colloquium on Grammatical Inference}\\[0.3cm]
+{\bf Lexical and Grammatical Learning}, with T. Oates. {\em Proceedings of the 23$^{rd}$ AAAI Conference on Artificial Intelligence (doctoral student abstract)}\\[0.3cm]
+\years{2007}\href{http://dx.doi.org/10.1109/DEVLRN.2007.4354058}{{\bf RIPTIDE: Segmenting Data Using Multiple Resolutions}}, with T. Oates.  
+{\em Proceedings of the 6$^{th}$ IEEE International Conference on Development and 
+Learning}\\[0.3cm]
+\href{http://www.tarmstro.com/pubs/armstrong_aaai_07.pdf}{{\bf UNDERTOW: Multi-Level Segmentation of Real-Valued Time Series}}, with T. Oates.  {\em Proceedings of the 22nd AAAI Conference on Artificial Intelligence (doctoral student abstract)}\\[0.3cm]
+\newpage
+\years{2006}\href{http://dx.doi.org/10.1007/11871637_44}{{\bf Discovering Patterns In Real-valued Time Series}}, with J. Catalano and T. Oates.  {\em Proceedings of the 10$^{th}$ European Conference on Principles and Practice of Knowledge Discovery in Databases}\\[0.3cm]
+\href{http://dx.doi.org/10.1007/11872436_12}{{\bf Inferring Grammars for Mildly Context-Sensitive Languages in Polynomial-Time}}, with T. Oates, L. Becerra-Bonache, and M. Atamas. {\em Proceeding of the 8$^{th}$ International Colloquium on Grammatical Inference}\\[0.3cm]
+\years{2005}\href{http://www.ijcai.org/papers/post-0508.pdf}{{\bf Transfer in Learning by Doing}}, with B. Krueger, T. Oates, P. Cohen, and C. Beal.  {\em Proceedings of the 19$^{th}$ International Joint Conference on Artificial Intelligence (poster track)}\\[0.3cm]
+\years{2004}\href{http://www.tarmstro.com/pubs/armstrong_aaai_04.pdf}{{\bf On the Relationship Between Lexical Semantics and Syntax for the Inference of Context-Free Grammars}}, with T. Oates, J. Harris, and M. Nejman. {\em Proceedings of the 19$^{th}$ National Conference on Artificial Intelligence}
+
+\subsection*{Book Reviews}
+\noindent
+\years{2007}\href{http://dx.doi.org/10.1016/j.artint.2007.10.014}{{\bf J. Gerard Wolff, Unifying Computing and Cognition}}.  {\em Artificial Intelligence} 171(18) : 1122-1123
+
+\subsection*{Refereed Workshops}
+\noindent
+\years{2013}{\bf Multivariate Methods for Classifying Physiological Data}, with P.~Ord\'{o}\~{n}ez, T.~Oates, J.~Fackler, and C.U.~Lehmann. {\em Working Notes of the SDM 2013 Workshop on Data Mining for Medicine and Healthcare}\\[0.3cm]
+\years{2011}
+{\bf Using Modiﬁed Multivariate Bag-of-Words Models to Classify Physiological Data,} with P.~Ord\'{o}\~{n}ez, T.~Oates, and J.~Fackler.  {\em Working Notes of the 5$^{th}$ International Workshop on Mining Multiple Information Sources}\\[0.3cm]
+{\bf An Architecture for Bootstrapping Lexical Semantics and Grammatical Structures,} with T.~Oates.  {\em Proceedings of the IEEE International Conferences on Web Intelligence and Intelligent Agent Technology Workshop on Learning, Agents and Formal Languages}\\[0.3cm]
+\years{2010}{\bf Accessible robotics and intelligent systems for social science undergraduates: poster session}.  {\em Journal of Computing Sciences in Colleges} 25(6)\\[0.3cm]
+\years{2007}\href{http://www.tarmstro.com/pubs/armstrong_pair_07.pdf}{{\bf Models of Strategic Deficiency and Poker}}, with G. Chaddock, M. Pickett, and T. Oates. {\em Working Notes of the Workshop on Plan, Activity, and Intent Recognition at the 22$^{nd}$ Conference on Artificial Intelligence}\\[0.3cm]
+\years{2005}\href{http://www.tarmstro.com/pubs/armstrong_ijcai_05.pdf}{{\bf A Polynomial Time Algorithm for Inferring Grammars for Mildly Context-Sensitive Languages}}, with T. Oates, L. Becerra-Bonache, and M. Atamas.  {\em Working Notes of the Workshop on Grammatical Inference 
+Applications: Successes and Future Challenges at the 19$^{th}$ International Joint Conference on Artificial Intelligence}\\[0.3cm]
+\years{2004}\href{http://www.tarmstro.com/pubs/armstrong_oates_spring-symposium04.pdf}{{\bf Meaning to Learn: Bootstrapping Semantics to Infer Syntax}}, with T. Oates.  {\em Working Notes of the Language Learning Spring Symposium of the American Association for Artificial Intelligence}\\[0.3cm]
+\years{2003}\href{http://www.tarmstro.com/pubs/armstrong_ecml_cfg_03.pdf}{{\bf Leveraging Lexical Semantics to Infer Context-Free Grammars}}, with T. Oates, J. Harris, and M. Nejman.  {\em Working Notes of the Workshop on Context-Free Grammar Learning at the 14$^{th}$ European Conference on Machine Learning and the 7$^{th}$ European Conference on Principles and Practice of Knowledge Discovery in Databases}
+
+\subsection*{Refereed Panels}
+\noindent
+\years{2013}{\bf Getting Out of the Shallow End: Techniques for empowering and encouraging underrepresented women in computing}, with J.~Margolis, K.~Alkoby, K.~Krishnaswamy, and P.~Ord\'{o}\~{n}ez. To appear in the {\em Proceedings of the 2013 Grace Hopper Celebration of Women in Computing}\\[0.3cm]
+{\bf Fulbrights Abroad in Computer Science}, with M.~Boutell and L.~Ott. {\em Proceedings of the 44th ACM Technical Symposium on Computer Science Education}
+
+\subsection*{Presentations \& Invited Talks}
+\noindent
+\years{2012}{\bf Faculty Life at a Liberal Arts College} with G.~Sahar and E.~McBreen. {\em The Harriet W. Sheridan Center for Teaching and Learning, Brown University}\\[0.3cm]
+\years{2011}
+{\bf Mining Multivariate Vital Signs Data \& Fulbright/USIEF Outreach}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item {\em Indus Institute of Technology \& Engineering, Ahmedabad, Gujarat, India}
+  \item {\em Kadi Sarva Vishwavidyalaya University, Gandhinagar, Gujarat, India}
+  \item {\em Congruence with Excellence, Ahmedabad Management Association, Ahmedabad, Gujarat, India}
+  \item {\em Maharshi Dayanand Saraswati University, Ajmer, Rajasthan, India}
+  \item {\em Janardan Rai Nagar Rajasthan Vidyapeeth University, Udaipur, India}
+\end{itemize}
+\noindent\years{2009}{{\bf Unsupervised Motif Discovery in Real-Valued Time Series Databases.}}  {\em Mathematics \& Computer Science Departmental Seminar Series}\\[0.3cm]
+{{\bf Studio-Based Learning for ``Robots, Games, and Problem Solving (CS1).''}}  {\em Studio-Based Learning in Computing Education}
+
+\newpage
+\section*{Teaching}
+\subsection*{Wheaton College}
+\vspace{-0.2in}
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccccccccccc}
+\toprule
+ & & F08 & S09 & F09 & S10 & F10 & S11 & F11 & S12 & F12 & S13 & F13   \\
+\cmidrule[\heavyrulewidth]{3-13} 
+ \multicolumn{1}{c}{{\bf Catalog Courses}}\\
+\cmidrule{1-1}
+  {\sc Fsem} ~101  && & & & & & & & & $\medbullet$\\
+  {\sc Comp} 106  & & $\medbullet$ & & & & & & & \\
+  {\sc Comp} 111  && & $\medbullet$ & & $\medbullet$ & $\medbullet$ & & & & \\
+  {\sc Comp} 115    && & & $\medbullet$ & $\medbullet$ & & & & & & & $\medbullet$\\
+  {\sc Comp} 116   && & & & & & & & $\medbullet$ &&$\medbullet$\\
+  {\sc Comp} 155    && & & $\medbullet$& & \\
+  {\sc Comp} 315   && & $\medbullet$ & & & \\
+  {\sc Comp} 325  && $\medbullet$ & & & & $\medbullet$ \\
+  {\sc Comp} 345  & & & & & & & & & & $\medbullet$\\
+  {\sc Comp} 375   && & & & & $\medbullet$ & & & & & & $\medbullet$\\
+  {\sc Comp} 401   && & & & & & & & $\medbullet$ & & $\medbullet$\\
+& \\
+\multicolumn{1}{c}{{\bf Additional Courses}} & \\
+\cmidrule{1-1}
+  {\sc Int} 098  && & & $\medbullet$ & $\medbullet$ & &&&&& $\medbullet$\\
+  {\sc Comp} 098/099  && & & & & $\medbullet$ &&&&&$\medbullet$\\
+  {\sc Comp} 198  && & & & $\medbullet$ & &&&&&\\
+  {\sc Comp} 299  && & & & $\medbullet$ & &&&$\medbullet$ & & & $\medbullet$\\
+  {\sc Comp} 399  && & $\medbullet$ & $\medbullet$ & $\medbullet$ & & & & & & $\medbullet$\\
+\bottomrule
+\end{tabular}
+\end{table}
+\vspace{-0.25in}
+\subsubsection*{Independent Study \amper{} Overload Course Topics}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item {\sc Int} 098: Language \& Logic: Computational Semantics; Representation \& Memory
+  \item {\sc Comp} 098/099: Project Euler; MOOC Language Practicum; Robotics
+  \item {\sc Comp} 198: StarCraft
+  \item {\sc Comp} 299: Artificial Intelligence and Science Fiction; Making; Future Interactions
+  \item {\sc Comp} 399: Multi-Agent Systems; Grammatical Inference; Social Network Analysis; Ethical Hacking
+\end{itemize}
+
+\subsection*{Hemchandracharya North Gujarat University}
+\noindent
+\begin{itemize}
+\item MScIT 902/MCA 52: Artificial Intelligence
+\end{itemize}
+
+\vspace{-0.15in}
+\subsection*{University of Maryland, Baltimore County}
+
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item {\sc Cmsc} 461: Introduction to Database Management Systems% -- (S08)
+  \item {\sc Cmsc} 203: Introduction to Discrete Structures% -- (S04)
+\end{itemize}
+
+
+%\hrule
+\section*{Student Research \amper{} Mentoring}
+
+\subsection*{{\textsc PhD} Dissertation Committees}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item Sourav Mukherjee, UMBC '10, {\em Stochastic Graph Grammars: Parameter Learning And Applications}
+\end{itemize}
+\subsection*{Undergraduate Thesis Committees}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item Stephanie Antetomaso, Wheaton '12, {\em Computational Methods of Authorship Attribution}
+  \item Nicholas Faulconer, Wheaton '12 {\em Design and Comparison of Parallel Ray-Tracing Algorithms}
+  \item Sean Feeney, Wheaton '11, {\em Analysis of Population Trends Among Eight Wintering Bird Species in Eastern Massachusetts Using CBC Data}
+\end{itemize}
+
+\subsection*{Undergraduate Research (Ongoing)}
+
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item Emma Hartman ({\bf Trustee Scholar}), Wheaton '14, {\em Vital Signs Data Mining}
+  \item Claudia D'Adamo, Wheaton '13, {\em Multivariate Time Series Data Mining}
+\end{itemize}
+
+\subsection*{Undergraduate Research (Completed) }
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item Stephanie Antetomaso ({\bf Balfour Scholar}), Wheaton '12, {\em Phoneme Discovery in Speech}
+  \item Sedra Davis ({\bf Posse Scholar}), Wheaton '14, {\em Multivariate Time Series Data Mining}
+  \item Anthony Castellani ({\bf Balfour Scholar}), Wheaton '13, {\em Mobile Robot Symbol Grounding}
+  \item Chris DeMolles ({\bf Balfour Scholar}), Wheaton '13, {\em Mobile Robot Symbol Grounding}
+  \item Nathaniel Hunt, Wheaton '13, {\em Mobile Robot Symbol Grounding}
+  \item Anthony Castellani ({\bf Balfour Scholar}), Wheaton '13, {\em Mobile Robot Symbol Grounding}
+  \item Jose Rosario, Wheaton '12 ({\bf Posse Scholar}), {\em Mobile Robot Symbol Grounding}
+  \item Eric Drewniak ({\bf Community Scholar}), Wheaton '11, {\em Time Series Data Mining}
+  \item Neil Kathok, Wheaton '10, {\em Analyzing Lexicons of Regular Languages}
+  \item Sam Von Ehren, Wheaton '10, {\em Opponent Modeling in Prisoner's Dilemmas}
+  \item Michael Patoka, UMBC '08, {\em Bootstrapping Syntax and Semantics}
+  \item Michael Atamas, UMBC '08, {\em Mildly Context-Sensitive Grammar Learning}
+  \item Justin Harris ({\bf Meyerhoff Scholar}), UMBC '03, {\em Context-Free Grammar Learning}
+  \item Mark Nejman, UMBC '03, {\em Context-Free Grammar Learning}
+\end{itemize}
+
+\newpage
+\section*{Student Publications \amper{} Presentations}
+\noindent
+\years{2012}Claudia D'Adamo and Sedra Davis. {\bf Learning to Classify Robot Sensory Experiences Using Bags of Patterns}.  {\em Grace Hopper Celebration of Women in Computing (poster)}\\[0.3cm]
+Anthony Castellani, Claudia D'Adamo, and Sedra Davis. {\bf Learning to Classify Robot Sensory Experiences Using Bags of Patterns}. {\em 17th Annual Conference of the Northeast Region of the Consortium for Computing Sciences in Colleges (poster)}\\[0.3cm]
+\noindent
+\years{2011}Stephanie Antetomaso. {\bf Unsupervised Phoneme Segmentation in Continuous Speech}.  {\em Grace Hopper Celebration of Women in Computing (poster)}\\[0.3cm]
+Stephanie Antetomaso. {\bf Unsupervised Phoneme Segmentation in Continuous Speech}.  {\em 16th Annual Conference of the Northeast Region of the Consortium for Computing Sciences in Colleges (poster)}\vspace{-0.1cm}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item Consortium for Computing Sciences in Colleges Northeast Region Conference Student Poster Competition -- {\bf Second Place}
+  \item Grace Hopper Celebration of Women in Computing Student Research Competition -- {\bf First Place}
+\end{itemize}
+\noindent
+\years{2010}Eric Drewniak.  {\bf Unsupervised Discovery of Motifs with Amplitude Shifting and Scaling}.  {\em Proceedings of the 41$^{st}$ ACM Technical Symposium on Computer Science Education}
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+  \item  SIGCSE  Student Research Competition -- {\bf Second Place}%\\[0.3cm]
+  \item ACM Student Research Competition Grand Finals -- {\bf Third Place}
+\end{itemize}
+Eric Drewniak.  {\bf Unsupervised Discovery of Motifs with Amplitude Shifting and Scaling}.  {\em 15th Annual Conference of the Northeast Region of the Consortium for Computing Sciences in Colleges (poster)}
+
+\section*{Service}
+
+\subsection*{Wheaton College}
+\noindent
+\years{2011--2012}Library and Information Services (LIS) in the Curriculum Working Group\\[0.1cm]
+\years{2009--2011}Faculty Workload and Economic Status Committee\\[0.1cm]
+\years{2009}Website Renovation Working Group\\[0.1cm]
+\years{2009--2011}Advisor to {\em Spectrum House}, LGBTQA-themed campus residence\\[0.1cm]
+\years{2008--}Safe Zone Trained, in support of the LGBTQA community
+\vspace{-0.3cm}
+\subsection*{University of Maryland, Baltimore County}
+\noindent
+\years{2006--2007}Director of Graduate Enrollment Search Committee\\[0.1cm]
+Promotion and Tenure Committee, {\em Computer Science \& Electrical Engineering Department} \\[0.1cm]
+\years{2004--2005}President, {\em Graduate Student Association} (\$300,000 budget)\\[0.1cm]
+President's University Steering Committee \\[0.1cm]
+Provost's Planning and Leadership Team \\[0.1cm]
+\years{2003--2004}Vice President, {\em Graduate Student Association}\\[0.1cm]
+Promotion and Tenure Committee, {\em Computer Science \& Electrical Engineering Department}
+\vspace{-0.3cm}
+
+\subsection*{Program Committees}
+\noindent
+\years{2012}11th International Colloquium on Grammatical Inference (ICGI)\\[0.1cm]
+\years{2008}AI and the Web Track at the 23rd Conference on Artificial Intelligence (AAAI)
+
+\subsection*{Reviewing}
+\noindent
+\years{2013}Reviewer, {\em Machine Learning: Grammatical Inference} (Special Issue)\\[0.1cm]
+\years{2012}Reviewer, {\em 11th International Colloquium on Grammatical Inference (ICGI)}\\[0.1cm]
+Reviewer, {\em ACM Technical Symposium on Computer Science Education}\\[0.1cm]
+Reviewer, {\em Conference on Innovation and Technology in Computer Science Education}\\[0.1cm]
+\years{2011}Reviewer, {\em ACM Technical Symposium on Computer Science Education}\\[0.1cm]
+\years{2010}Reviewer, {\em Conference on Innovation and Technology in Computer Science Education}\\[0.1cm]
+Reviewer, {\em Choice: Current Reviews for Academic Libraries}\\[0.1cm]
+Reviewer, {\em Leverhulme Trust}\\[0.1cm]
+Reviewer, {\em Consortium for Computing Sciences in Colleges — Northeastern Region}\\[0.1cm]
+\years{2009}Reviewer, {\em Neural Computation (The MIT Press)}\\[0.1cm]
+Reviewer, {\em International Conference on Machine Learning}\\[0.1cm]
+Reviewer, {\em Consortium for Computing Sciences in Colleges — Northeastern Region}\\[0.1cm]
+\years{2008}Reviewer, {\em International Conference on Development and Learning}\\[0.1cm]
+External Reviewer, {\em International Colloquium on Grammatical Inference}\\[0.1cm]
+\years{2007}External Reviewer, {\em Information Sciences Journal}\\[0.1cm]
+External Reviewer, {\em International Conference on Development and Learning}\\[0.1cm]
+External Reviewer, {\em Conference on Computational Natural Language Learning}\\[0.1cm]
+\years{2006}Reviewer, {\em Journal of Applied Artificial Intelligence -- Special Issue}\\[0.1cm]
+External Reviewer, {\em International Colloquium on Grammatical Inference}\\[0.1cm]
+\years{2005}External Reviewer, {\em National Conference on Artificial Intelligence}\\[0.1cm]
+External Reviewer, {\em International Joint Conference on Artificial Intelligence}\\[0.1cm]
+External Reviewer, {\em International Conference on Machine Learning}
+
+\vspace{-0.1cm}
+\section*{Professional Development}
+\noindent
+\years{2009}40$^{th}$ ACM Technical Symposium on Computer Science Education\\[0.1cm]
+NITLE Workshop: Teaching Science in the Digital Age
+
+\end{document}
